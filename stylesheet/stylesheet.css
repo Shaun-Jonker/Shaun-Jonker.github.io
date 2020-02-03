@@ -1,3 +1,9 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Rubik', sans-serif;
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +21,9 @@
 
     /* FONT */
     --main-header-font-family: Calibri, sans-serif;
+    --font-heading-font-family: 'Rubik', sans-serif;
+    --font-paragraph-font-family: 'Oswald', sans-serif;
+    --font-special-font-family: 'Bebas Neue', cursive;
 
     /* MAIN HEADER */
     --main-header-menu-width: 450px;
@@ -181,12 +190,13 @@ main{
     position: relative;
     margin-top: 70px;
     width: 100%;
+    height: 100%;
     background-color: whitesmoke;
     z-index: -1;
 }
 
 .home-container{
-    padding: 60px;
+    padding: 30px;
     
 }
 
@@ -194,6 +204,29 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+.info-box{
+    max-width: 400px;
+    padding-right: 40px;
+}
+
+.info-box h6{
+    font-family: var(--font-heading-font-family);
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.info-box h1{
+    font-family: var(--font-special-font-family);
+    font-size: 40px;
+}
+
+.info-box p{
+    font-family: var(--font-paragraph-font-family);
+    font-size: larger;
 }
 
 
@@ -205,6 +238,42 @@ main{
 }
 
 #about{
+    color: var(--site-orange);
     position: relative;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1069px) {
+
+    section{
+        width: 100%;
+    }
+
+    .info-box{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-img .portfolio-img{
+        margin-top: 30px;
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 1069px) {
+
+    .profile-img .portfolio-img{
+        width: 200px;
+    }
+
 }
