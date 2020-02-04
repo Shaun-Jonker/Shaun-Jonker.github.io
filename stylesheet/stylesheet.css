@@ -18,6 +18,7 @@ font-family: 'Rubik', sans-serif;
     --main-header-quaternary-color: #aaa;
     --main-header-shadow-color: rgba(0, 0, 0, 0.9);
     --site-orange: #e78200;
+    --site-gray: #7e7e7e;
 
     /* FONT */
     --main-header-font-family: Calibri, sans-serif;
@@ -32,6 +33,11 @@ font-family: 'Rubik', sans-serif;
 
     /* TRASITION */
     --main-header-transition: all 0.35s ease;
+}
+body{
+    height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 /* MAIN HEADER */
@@ -196,8 +202,7 @@ main{
 }
 
 .home-container{
-    padding: 30px;
-    
+    height: 100%;
 }
 
 .info{
@@ -205,12 +210,14 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 60px;
+    padding-top: 30px;
 }
 
 .info-box{
+    padding: 250px 0;
     max-width: 400px;
-    padding-right: 40px;
+    margin-right: 50px;
+    
 }
 
 .info-box h6{
@@ -219,16 +226,34 @@ main{
     font-size: 28px;
 }
 
+.info-box h4{
+    color: var(--site-gray);
+    font-size: 26px;
+    
+}
+
 .info-box h1{
-    font-family: var(--font-special-font-family);
-    font-size: 40px;
+    font-family: var(--font-heading-font-family);
+    font-size: 50px;
+    color: var(--site-orange);
 }
 
-.info-box p{
+.info-box h3{
     font-family: var(--font-paragraph-font-family);
-    font-size: larger;
+    font-size: 25px;
 }
 
+.info-box h2{
+    font-family: var(--font-heading-font-family);
+    font-size: 40px;
+    color: var(--site-gray);
+    font-weight: 30;
+}
+
+.info-box h2 span{
+    font-weight: 600;
+    color: var(--site-orange);
+}
 
 .profile-img .portfolio-img{
     width: 450px;
@@ -240,9 +265,77 @@ main{
 #about{
     color: var(--site-orange);
     position: relative;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 1);
+    height: 1000px;
+    background-color: rgba(14, 4, 0, 0.7);
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
 }
+
+.about{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.about::after {
+    content: "";
+    background: url(../resources/images/ab1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.about-info{
+    margin-top: 150px;
+    width: 500px;
+}
+
+
+
+.about-info h1{
+    font-size: 50px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: var(--font-heading-font-family);
+}
+
+.about-info h3{
+    font-size: 30px;
+    padding-left: 8px;
+    font-family: var(--font-paragraph-font-family);
+}
+
+.about-info h3 span{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--site-gray);
+}
+
+.about-info p{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: var(--font-paragraph-font-family);
+}
+
+.about-info p span{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--site-gray);
+    font-family: var(--font-heading-font-family);
+    font-size: 20px;
+}
+
 
 
 
@@ -255,22 +348,60 @@ main{
         width: 100%;
     }
 
+    .info{
+        flex-direction: column;
+    }
+
     .info-box{
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-right: 0px;
+        padding: 0px 0px;
+
     }
+
+    .info-box h1{
+        font-size: 40px;
+
+    }
+    .info-box h2{
+        font-size: 25px;
+
+    }
+    .info-box h3{
+        font-size: 20px;
+
+    }
+    .info-box h4{
+        font-size: 25px;
+
+    }
+    .info-box h5{
+        font-size: 40px;
+
+    }
+    .info-box h6{
+        font-size: 25px;
+
+    }
+    
+    .info-box h2 span{
+        font-size: 27px;
+    }
+
+    
 
     .profile-img .portfolio-img{
         margin-top: 30px;
-        
+        width: 300px;
         justify-content: center;
         align-items: center;
     }
 
 }
 
-@media only screen and (max-width: 1069px) {
+@media only screen and (max-width: 567px) {
 
     .profile-img .portfolio-img{
         width: 200px;
