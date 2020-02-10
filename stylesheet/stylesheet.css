@@ -201,7 +201,7 @@ main{
     position: relative;
     margin-top: 70px;
     width: 100%;
-    height: 100%;
+    height: 880px;
     background-color: whitesmoke;
     z-index: -1;
 }
@@ -218,7 +218,7 @@ main{
 }
 
 .info-box{
-    padding: 150px 0;
+    padding: 200px 0;
     max-width: 400px;
     margin-right: 50px;
     
@@ -398,6 +398,7 @@ main{
 
 .project-container{
     width: 100%;
+    padding-top: 60px;
     position: relative;
 }
     
@@ -408,6 +409,7 @@ main{
     font-size: 50px;
     font-family: var(--font-heading-font-family);
     text-transform: uppercase;
+    
 
 }
 
@@ -430,25 +432,30 @@ main{
     height: 320px;
     margin: 45px;
     overflow: hidden;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    transition:  0.7s ease;
+    border: 1px solid var(--site-gray);
+    
 
 }
 
 .project-flex:hover{
-    border: 1px solid var(--site-gray);
     border-radius: 15px;
-    box-shadow: 5px 5px var(--site-orange);
+    box-shadow: 5px 5px 5px var(--site-gray);
     cursor: pointer;
-}
-
-.project-flex img:hover{
-    background-color: rgba(14, 4, 0, 0.1);
+    background-color: rgba(235, 229, 226, 0.322);
+    border: 2px solid var(--site-gray);
+    
+    
 }
 
 .project-flex img{
     width: 250px;
+    height: 200px;
 }
+
+
 
 .project-flex figcaption{
     background-color: rgba(0, 0, 0, 0.1);
@@ -457,6 +464,7 @@ main{
     font-family: var(--font-paragraph-font-family);
     border-top: 3px solid var(--site-gray);
     height: 100%;
+    margin-top: -5px;
 
 }
 
@@ -489,6 +497,12 @@ main{
         width: 100%;
     }
 
+    #home{
+      
+        height: 880px;
+        
+    }
+
     .info{
         flex-direction: column;
     }
@@ -497,6 +511,7 @@ main{
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
         margin-right: 0px;
         padding: 0px 0px;
 
@@ -556,6 +571,22 @@ main{
         font-size: 25px;
     }
 
-    
+    .project-container h2{
+        font-size: 2em;
+    }
 
+}
+
+@media only screen and (max-height: 823px){
+
+    #home{
+        height: 780px;
+    }
+}
+
+@media only screen and (max-height: 640px){
+
+    #home{
+        height: 600px;
+    }
 }
