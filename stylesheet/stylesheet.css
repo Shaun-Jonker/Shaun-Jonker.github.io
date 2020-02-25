@@ -435,7 +435,7 @@ main{
     border-radius: 15px;
     background-color: rgb(15, 14, 14);
     transition:  0.7s ease;
-    border: 1px solid  rgb(15, 14, 14);
+    border: 1px solid  rgb(15, 14, 13);
     
 
 }
