@@ -24,12 +24,14 @@ const toggleMainHeader = window.onscroll = () => {
 // TOGGLE SIDE MENU
 let sideMenuState = 0
 const openSideMenu = () => {
-    sideMenu.style.left = "0"    
+    sideMenu.style.left = "0"
+    sideMenu.style.position = "fixed"    
     setTimeout(() => sideMenuCloseDiv.style.background = "rgba(0, 0, 0, 0.6)" , DEFAULT_TRANSITION_TIME);
 }
 
 const closeSideMenu = () => {
     sideMenuCloseDiv.style.background = "rgba(0, 0, 0, 0)"
+    sideMenu.style.position = "absolute"    
     setTimeout(() => sideMenu.style.left = `-${SIDE_MENU_WIDTH}px`, DEFAULT_TRANSITION_TIME);
     sideMenuState = 0
 }

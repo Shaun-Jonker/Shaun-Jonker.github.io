@@ -32,7 +32,7 @@ font-family: 'Rubik', sans-serif;
     --main-header-menu-button-width: 80px;
 
     /* TRASITION */
-    --main-header-transition: all 0.35s ease;
+    --main-header-transition: all 0.50s ease;
 }
 body{
     height: 100%;
@@ -104,7 +104,8 @@ html{
 /* SIDE MENU */
 .side-menu {
     display: flex;
-    width: 1000px;
+    flex: none;
+    width: 100%;
     position: absolute;
     left: -1000px;
     z-index: 10;
@@ -115,6 +116,7 @@ html{
         height: 100%;
         width: 276px;
         background: #101010;
+        
     }
         .side-menu ul {
             display: flex;
