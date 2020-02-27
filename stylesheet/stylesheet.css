@@ -498,7 +498,58 @@ main{
     z-index: -1;
   }
 
+  #contact{
+    position: relative;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background-color: whitesmoke;
+    border-bottom: 10px solid black;
 
+  }
+
+  .contact-container{
+    background-color: whitesmoke;
+  }
+
+  .contact-container h2 {
+    text-align: center;
+    color: var(--site-orange);
+    font-size: 50px;
+    font-family: var(--font-heading-font-family);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.contact-container span {
+    color: var(--site-gray);
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-info ul{
+
+    margin: 50px;
+    display: flex;
+}
+
+.contact-info ul li{
+    margin: 50px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contact-info ul li a{
+    text-decoration: none;
+    
+}
 
 
 
