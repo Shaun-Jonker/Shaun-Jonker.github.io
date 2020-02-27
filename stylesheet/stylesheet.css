@@ -530,14 +530,16 @@ main{
 .contact-info{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
 }
 
 .contact-info ul{
 
-    margin: 50px;
+    margin: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-info ul li{
