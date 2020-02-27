@@ -344,6 +344,7 @@ main{
 
 #technologies{
     display: flex;
+    min-height: 800px;
     flex-direction: column;
     align-content: center;
     justify-content: center;
