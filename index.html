@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./stylesheet/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald|Rubik&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/14868637ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
 </head>
@@ -52,25 +54,25 @@
             <div class="home-container">
                 <div class="info">
                     <div class="info-box">
-                        <h6>This is me</h6>
-                        <h1>Shaun Jonker</h1>
+                        <h6 data-aos="fade-left" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-duration="1000">This is me</h6>
+                        <h1 data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-duration="1000">Shaun Jonker</h1>
                         
-                        <h4>
+                        <h4 data-aos="fade-left" data-aos-delay="800" data-aos-easing="ease-in-out" data-aos-duration="1000">
                             <br>
                             I'M A CREATIVE WEB DEVELOPER
                         </h4>
 
-                        <h3>
+                        <h3 data-aos="fade-right" data-aos-delay="1100" data-aos-easing="ease-in-out" data-aos-duration="1000">
                             <br>
                             I STAND ON A SWEET SPOT WHERE
                         </h3>
-                        <h2>
+                        <h2 data-aos="fade-left" data-aos-delay="1400" data-aos-easing="ease-in-out" data-aos-duration="1000">
                             <span>DESIGN</span> & <span>CODE</span>
                         </h2>
-                        <h2><span>INTERSECTS</span>.</h2>
+                        <h2 data-aos="fade-right" data-aos-delay="1700" data-aos-easing="ease-in-out" data-aos-duration="1000"><span>INTERSECTS</span>.</h2>
                                             
                     </div>
-                    <div class="profile-img">
+                    <div class="profile-img" data-aos="slide-right" data-aos-duration="2500">
                         <img class="portfolio-img" src="./resources/images/profile image.jpg" alt="">
                     </div>
                 </div>
@@ -188,7 +190,12 @@
 
     </main>
 
-    
+    <!--initializing the animate on scroll script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 <script src="./javascript/hamburger.js"></script>
 </html>
