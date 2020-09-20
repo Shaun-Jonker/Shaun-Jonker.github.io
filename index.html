@@ -1,205 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>Shaun Jonker Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
-    <title>Shaun Jonker | Portfolio</title>
-    <link rel="stylesheet" href="./stylesheet/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald|Rubik&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/14868637ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.png">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
-
-
-</head>
 <body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile_image.jpg" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Shaun Jonker</h1>
+                <h2 class="desc">Python Developer</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/HystericalMisf1" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/shaun-jonker-097914182/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/Shaun-Jonker" target="_blank"><i class="fab fa-github-alt"></i></a></li>    
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/14300571/shaun-jonker" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>   
+                    <li class="list-inline-item last-item"><a href="https://codepen.io/shaun-jonker" target="_blank"><i class="fab fa-codepen"></i></a></li>                
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="mailto: shaun.c.jonker@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>A Python Developer with 2+ years of self-taught experience with technologies such as flask, numpy, pandas, matplotlib, urllib and many more. A hard working individual with a passion and motivation to achieve goals and deadlines. A person who loves picking up new technologies and learning new things </p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/pc_price_checker.PNG" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="https://github.com/Shaun-Jonker/PC-Price-Checker" target="_blank">PC Price Checker (South Africa Only)</a></h3>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>PC Price Checker is a Desktop Application that scrapes the local South African PC suppliers, and neatly sorts Items and Prices into an easily navigatable Exel spreadsheet for each category, such as monitors, graphics cards, CPUs etc.</p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="https://www.dropbox.com/s/zi52n9s6oyt7hpi/PC%20Price%20Checker.exe?dl=0" target="_blank"><i class="fas fa-thumbs-up"></i> Download</a>      
 
-    <header class="main-header">
-        <div class="container">
-            <img class="main-header-logo" src="./resources/images/sj logo.png"></img>
-            <nav class="main-header-menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#technologies">Tech</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="main-header-side-menu-button" onclick="toggleSideMenu(1)">
-                <div class="stripes"></div>
-                <div class="stripes"></div>
-                <div class="stripes"></div>
-                <div class="stripes"></div>
-            </button>
-        </div>
-    </header>
-    <nav class="side-menu">
-        <div class="side-menu-content">
-            <ul>
-                <li><a href="#home" class="side-menu-item">Home</a></li>
-                <li><a href="#about" class="side-menu-item">About</a></li>
-                <li><a href="#technologies" class="side-menu-item">Tech</a></li>
-                <li><a href="#projects" class="side-menu-item">Projects</a></li>
-                <li><a href="#contact" class="side-menu-item">Contact</a></li>
-            </ul>
-        </div>
-        <div class="side-menu-close-div"></div>
-    </nav>
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/Shaun-Jonker/Dollar-to-Rand-logger" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/D_to_R.PNG" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/Shaun-Jonker/Dollar-to-Rand-logger" target="_blank">Dollar to Rand Logger</a></h3>
+                                    <p class="mb-2">Because for a long time I was earning a salary in Dollars, and with the up and down exchange rate in South Africa it was a useful script to see when the exhange rate was at its best for me to have my salary exchanged to maximize the amout as much as possible.</p>
+                                    <p><a class="more-link" href="https://github.com/Shaun-Jonker/Dollar-to-Rand-logger" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/Shaun-Jonker/Old-Portfolio" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/old_portfolio.PNG" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/Shaun-Jonker/Old-Portfolio" target="_blank">My Very First Portfolio</a></h3>
+                                    <p class="mb-2">This was my very first portfolio that I had made and was very impressed with it at the time but know I could do better. Then I started working on on version two of my portfolio which can be seen further down on this list.</p>
+                                    <p><a class="more-link" href="https://github.com/Shaun-Jonker/Old-Portfolio" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-3.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Instance - Bootstrap 4 Portfolio Template for Aspiring Full Stack Developers</a></h3>
+                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-4.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro - Bootstrap 4 Template for Mobile Startups</a></h3>
+                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-5.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">DevStudio - Bootstrap 4 Template for WebDev Agencies and Freelance Developers</a></h3>
+                                    <p class="mb-2"> You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+               <!-- <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/" target="_blank">Pillar - Free Bootstrap 4 Resume/CV Template for Developers</a> <span class="badge badge-theme">Free</span></h3>
+                                <p class="summary">Provide a brief description of your project. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatu.</p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank">DevBlog - Free Bootstrap 4 Blog Template for Developers</a> <span class="badge badge-theme">Free</span></h3>
+                                <p class="summary">Provide a brief description of your project. Maecenas ornare ultricies risus, in fermentum augue consectetur in. Vestibulum vitae mauris iaculis, sollicitudin velit in, molestie nulla. </p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/speciality/devblog-free-bootstrap-4-blog-template-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                            </div>
+                            <div class="item">
+                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank">Nova - Free App Landing Page Template for App Developers</a> <span class="badge badge-theme">Free</span></h3>
+                                <p class="summary">Provide a brief description of your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel purus enim. Etiam tortor felis, fermentum ac ultrices sed.</p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/nova-bootstrap-landing-page-template-for-mobile-apps/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                            </div>
+                            
+                            <a class="btn btn-cta-secondary" href="#">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+                            
+                        </div>
+                    </div>               
+                </section> -->
+                
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">English Teacher - <span class="place"><a href="#">ABC360</a></span> <span class="year">May 2014 – Jul 2020 (6 yrs 3 mos)</span></h3>
+                                <p>Handled curriculum for each individual student.<br>
+                                    Taught and prepared students for their IELTS evaluations for studying abroad.<br>
+                                    Taught over 18000 classes since starting in 2014.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Head Chef - <span class="place"><a href="#">Jimmy The Fish</a></span> <span class="year">Jan 2013 – Jan 2014 (1 yr 1 mo)</span></h3>
+                                <p>Worked in a high paced environment to meet deadlines.<br>
+                                    Produced high-quality service with consistency.<br>
+                                    Cut spending of the kitchen by 12%.<br>
+                                    Trained staff on kitchen cleanliness.</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Field Supervisor - <span class="place"><a href="#">Wilberry Eco Wash</a></span> <span class="year">Apr 2009 – Jan 2011 (1 yr 10 mos)</span></h3>
+                                <p>Maintained quality control through all franchises throughout the country.</p>
+                            </div><!--//item-->
 
-    <main>
-        <section id="home">
-            <div class="home-container">
-                <div class="info">
-                    <div class="info-box">
-                        <h6 data-aos="fade-left" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-duration="1000">This is me</h6>
-                        <h1 data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-duration="1000">Shaun Jonker</h1>
+                            <div class="item">
+                                <h3 class="title">Manager - <span class="place"><a href="#">Pro Clean Car Valet</a></span> <span class="year">Jun 2006 – Jan 2009 (2 yrs 8 mos)</span></h3>
+                                <p>Handled customer orders.<br>
+                                    Paid monthly salaries.<br>
+                                    Quality control of vehicles returned to customers.</p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My GitHub</h2>
+                                                
+                        <div id="github-graph" class="github-graph">
+                            
+                        </div><!--//github-graph-->
+
+                               
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
                         
-                        <h4 data-aos="fade-left" data-aos-delay="800" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                            <br>
-                            I'M A CREATIVE WEB DEVELOPER
-                        </h4>
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Pearly Beach, SA</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto: shaun.c.jonker@gmail.com">shaun.c.jonker@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.shaunjonker.com</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                These are my main skill sets. I am always willing to learn more and absolutely love pickimg up a new language.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I also know a lot of frame works for Python such as numpy, matplotlib, pandas, selenuim etc."><i class="fas fa-info-circle"></i>Great</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Javascript<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="This was the very first language that I had learned and became comfortable with."><i class="fas fa-info-circle"></i>Great</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5 &amp; CSS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have great knowledge of HTML and CSS but need to practice my designs"><i class="fas fa-info-circle"></i>Great</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Java was the first language I started with but was to difficult for me in the beginning and moved to a different languages. Still want to pick up where I left off"><i class="fas fa-info-circle"></i>Beginner</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="45%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <p><a class="more-link" href="https://github.com/Shaun-Jonker" target="_blank"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="testimonials aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fas fa-quote-left"></i>Shaun is a very hard working man.<br> Patient and driven.</p>
+                                </blockquote>                
+                                <p class="source"><span class="name">Lizaan</span><br /><span class="title">Tutor at ABC360</span></p>                                                             
+                            </div><!--//item-->
+                            
+                            <p><a class="more-link" href="https://www.linkedin.com/in/shaun-jonker-097914182/" target="_blank"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Py4E</h3>
+                                <h4 class="university">University of Michigan <span class="year">(2020 -2020)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Codecademy</h3>
+                                <h4 class="university">Codecademy <span class="year">(2018-2020)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Photoraphy</h3>
+                                <h4 class="university">Shaw Academy <span class="year">(2015-2016)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Afrikaans:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Dutch:</strong></span>
+                                    <span class="level">Limited Understanding <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <p></p>
+                        <div id="rss-feeds" class="content">
 
-                        <h3 data-aos="fade-right" data-aos-delay="1100" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                            <br>
-                            I STAND ON A SWEET SPOT WHERE
-                        </h3>
-                        <h2 data-aos="fade-left" data-aos-delay="1400" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                            <span>DESIGN</span> & <span>CODE</span>
-                        </h2>
-                        <h2 data-aos="fade-right" data-aos-delay="1700" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-once="true" data-aos-anchor="#home"><span>INTERSECTS</span>.</h2>
-                                            
-                    </div>
-                    <div class="profile-img" data-aos="slide-right" data-aos-duration="2500">
-                        <img class="portfolio-img" src="./resources/images/profile image.jpg" alt="">
-                    </div>
-                </div>
-            </div>					
-        </section>
-
-        <section id="about">
-            <div class="about-container">
-                <div class="about">
-                    <div class="about-info">
-                        <h1>< About Me /></h1>
-                        <h3>I caught the <span>coding bug</span>!</h3>
-
-                        <p>It all started one day when playing Minecraft( Yes I love Minecraft ). I thought of a feature that would be nice to add to the game but found that no one had made such a plugin.</p>
-
-                        <p>So I decided how hard could it be and decided to make it myself. I first saw how some were made and found it immediately interesting and something clicked when I saw all of this confusing writing and decided to learn what it all meant. As I started going through video after video and as I eventually learned how to write Java I said to myself "I want more".</p>
-
-                        <p>So I studied HTML then CSS some CSS libraries, JavaScript and its libraries such as BootStrap, Jquery, Handlebars.js, Angular.js, Node.js etc. Then my thoughts were why stop there? So I studied to become a Full Stack Developer.</p>
-
-                        <p><span> I truly love this career and I'm not looking back. I wish I had found this passion sooner</span>...</p>
-
-                        <p>My specialties include quickly learning skills and programming languages, problem-solving, responsive design principles, website optimizations, OOP. I am still enthusiastically grabbing onto any other programming languages, frameworks, or principles I can integrate into my work...</p>
-                                            
-                    </div>
-                </div>
-            </div>					
-        </section>
-
-        <section id="technologies">
-            <div class="technology-container">
-                <div class="tech">
-                    <h2>&lt;<span>Tech</span>nologies</h2>
-                    <h4>I work with /&gt;</h4>
-                    <div class="tech-info">
-                        
-                        <img class="html" src="./resources/images/html 512.png" alt="">
-                        <img class="css" src="./resources/images/css 512.png" alt="">
-                        <img class="js" src="./resources/images/javascript.png" alt="">
-                        <img class="vue" src="./resources/images/Vue.png" alt="">
-                        <img class="typescript" src="./resources/images/typescript.png" alt="">
-                        <img class="angular" src="./resources/images/angular.png" alt="">
-                        <img class="python" src="./resources/images/python_512.png" alt="">
-
-                        
-                        
-
-                        
-                    </div>
-                </div>
-            </div>					
-        </section>
-
-        <section id="projects">
-            <div class="project-container">    
-                   <h2><span>&lt;</span>My Projects <span>/&gt;</span></h2>
-                <div class="project-info">
-                    <figure class="project-flex">
-                        <a href="./projects/drumkit.html" target="_blank"><img class="vue" src="./resources/images/drumkit.jpg" alt="picture of a drumkit">
-                        <figcaption>
-                        <p>A visual and playable drumkit. </p>
-                        </figcaption></a>
-                    </figure>
-
-                    <figure class="project-flex">
-                        <a href="./projects/clock.html" target="_blank"> <img class="vue" src="./resources/images/clock.jpg" alt="">
-                        <figcaption>
-                        <p>A clock that uses pure CSS and JavaScript</p>
-                        </figcaption></a>
-                    </figure> 
-
-                    <figure class="project-flex">
-                        <a href="./projects/css-variables.html" target="_blank"> <img class="vue" src="./resources/images/cssvarible.jpg" alt="">
-                        <figcaption>
-                        <p>Update CSS variables using JavaScript</p>
-                        </figcaption></a>
-                    </figure> 
-
-                    <figure class="project-flex">
-                        <a href="./projects/flex-gallery.html" target="_blank"> <img class="vue" src="./resources/images/flexgallery.jpg" alt="">
-                        <figcaption>
-                        <p>A clickable flex box gallery</p>
-                        </figcaption></a>
-                    </figure> 
-
-                    <figure class="project-flex">
-                        <a href="./projects/old portfolio/index.html" target="_blank"><img class="vue" src="./resources/images/old site.png" alt="picture of a drumkit">
-                        <figcaption>
-                        <p>My old Portfolio and a testament to how I have improved since then. </p>
-                        </figcaption></a>
-                    </figure>
-
-                    <figure class="project-flex">
-                        <img class="vue" src="./resources/images/add button 2.png" alt="">
-                        <figcaption>
-                        <p>More projects coming soon!</p>
-                        </figcaption>
-                    </figure> 
-
-                    
-
-                </div>
-            </div>					
-        </section>
-
-        <section id="contact">
-            <div class="contact-container">    
-                   <h2><span>&lt;</span>Contact Me <span>/&gt;</span></h2>
-                <div class="contact-info">
-                    <ul>
-                        <li><a href="skype:live:shaun.c.jonker?chat" ><i class="fab fa-skype fa-3x" title="Skype" style="color:black"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/shaun-jonker-097914182" ><i class="fab fa-linkedin fa-3x" title="Linkedin" style="color:black"></i></a></li>
-                        <li><a href="https://www.github.com/Shaun-Jonker" ><i class="fab fa-github fa-3x" title="Github" style="color:black"></i></a></li>
-                        <li><a href="mailto: shaun.c.jonker@gmail.com" ><i class="fas fa-envelope-square fa-3x" title="Gmail" style="color:black"></i></a></li>
-                        <li><a href="./resources/files/Shaun Web Dev CV.pdf" download="Shaun Jonker Web Dev CV.pdf"><i class="fas fa-file fa-3x" title="CV Download" style="color: black"></i></a></li>
-                    </ul>
-                </div>
-            </div>					
-        </section>
-
-    </main>
-
-    <!--initializing the animate on scroll script-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favourite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=l9nh1l8ZIJQ" target="_blank">Programming / Coding / Hacking music vol.16</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=hGIW2fDb0jg" target="_blank">Programming ▫️ Designing ▫️ Hacking ▫️ Coding ▫️ Focus ▫️ Music 🧬</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=M5QY2_8704o" target="_blank">Chillstep Music for Programming / Cyber / Coding</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=f02mOEt11OQ" target="_blank">code-fi / lofi beats to code/relax to</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">AWS Webinar 2020</a></li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="https://github.com/python-discord/summer-code-jam-2020" target="_blank">Summer Code Jam 2020</a> <a href="https://discord.gg/python" target="_blank">Python Discord Group</a></li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="https://www.google.com/url?q=http://codecademy-pro.mobilize.io/events/43309&sa=D&source=calendar&usd=2&usg=AOvVaw21QI09DxwInaVF78kDs8eR" target="_blank">Codecademy Summit April 2020</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Credits</h2>
+                        <div class="content">
+                            <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://jquery.com/" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
+                                
+                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
+                                
+                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery RSS</a></li>
+                                
+                            </ul>
+                            
+                            <hr/>
+                            
+                             
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-<script src="./javascript/hamburger.js"></script>
-</html>
+</html> 
+
