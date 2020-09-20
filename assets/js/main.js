@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
-        "http://feeds.feedburner.com/TesterForRss",
+        "http://feeds.feedburner.com/HystericalBlogs",
         
         {
         // how many entries do you want?
